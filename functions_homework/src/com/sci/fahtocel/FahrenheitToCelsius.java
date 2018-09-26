@@ -10,16 +10,16 @@ package com.sci.fahtocel;
 
 import java.util.Scanner;
 
-public class FahrenheitToCelsius {
+private class FahrenheitToCelsius {
 
-    public static double convertFahtoCel(double fahT){
+    private static double convertFahtoCel(double fahT){
 
         double celT = (fahT - 32) / 1.8;
         return Math.floor(celT * 100) / 100d;
 
     }
 
-    public static void main(String[] args) {
+    private static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Please enter your body temperature measured in Fahrenheit degrees:");
